@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout4</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div>
+        <aside></aside>
+
+        <section>
+            <main></main>
+            <footer></footer>
+        </section>
+    </div>
+
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: crimson;
+        height: 10vh;
+    }
+
+    aside {
+        background-color: brown;
+        width: 20%;
+    }
+
+    main {
+        background-color: rgb(238, 213, 213);
+        height: 90%;
+    }
+
+    footer {
+        background-color: rgb(75, 10, 10);
+        height: 10%;
+    }
+
+    div {
+        display: flex;
+        height: 90vh;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+    }
+</style>
+
+</html>

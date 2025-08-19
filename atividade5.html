@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout5</title>
+</head>
+
+<body>
+    <header>
+        <div id="LOGO"></div>
+        <nav></nav>
+    </header>
+
+    <section class="painel">
+        <div class="quadrado"></div>
+        <div>
+            <div class="retangulo"></div>
+            <div class="retangulo"></div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+    </section>
+
+    <footer>
+        <div class="quadrado"></div>
+        <div class="retangulo"></div>
+    </footer>
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: rgb(54, 4, 4);
+        height: 10vh;
+
+    }
+
+    #LOGO {
+        height: 4rem;
+        width: 10rem;
+        background-color: rgb(130, 15, 15);
+
+    }
+
+    nav {
+        height: 4rem;
+        width: 30rem;
+        background-color: rgb(237, 221, 221);
+    }
+
+    .painel {
+        display: flex;
+        background-color: rgb(210, 30, 30);
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 8rem;
+
+    }
+
+    .painel .quadrado {
+        height: 10rem;
+        width: 10rem;
+        background-color: rgb(32, 4, 4);
+
+    }
+
+    .painel div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .painel div .retangulo {
+        width: 16rem;
+        height: 2rem;
+        background-color: rgb(167, 7, 7);
+    }
+
+    .carrossel {
+        display: flex;
+        gap: 8rem;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem;
+    }
+
+    .card {
+        height: 12rem;
+        width: 8rem;
+        background-color: rgb(92, 6, 6);
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(38, 2, 2);
+        padding: 2rem;
+        position: relative;
+        
+    }
+
+    footer .quadrado {
+        width: 10rem;
+        height: 10rem;
+        background-color: red;
+        }
+
+        footer .retangulo {
+            width: 15rem;
+            height: 3rem;
+            background-color: rgb(79, 9, 9);
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 2rem;
+        }
+</style>
+
+</html>
