@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3</title>
+</head>
+<body>
+    <aside></aside>
+
+    <div>
+        <header></header>
+        <main></main>
+        <footer></footer>
+    </div>
+</body>
+<style>
+    body{
+        display: flex;
+    }
+     *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    aside {
+        background-color: aquamarine;
+        height: 100vh;
+        width: 18%;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    header{
+        background-color: rgb(18, 150, 119);
+        height: 10%;
+    }
+
+   main{
+
+    background-color: aliceblue;
+    height: 80%;
+   }
+
+   footer{
+    background-color: cadetblue;
+    height: 10%;
+   }
+
+</style>
+</html>
